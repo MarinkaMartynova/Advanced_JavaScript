@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы о продуктах</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>Отзывы о продуктах</h1>
+  <button id="reviewsBtn" onclick="showViewReviewsPage()">Показать отзывы</button>
+  <button id="reviewsBtn" onclick="showAddReviewPage()">Написать свой отзыв</button>
+    
+  <div id="addReviewPage">
+      <h2>Добавить отзыв</h2>
+
+      <select id="productSelect">
+          <option value="Apple iPhone 13">Apple iPhone 13</option>
+          <option value="Samsung Galaxy Z Fold 3">Samsung Galaxy Z Fold 3</option>
+          <option value="Sony PlayStation 5">Sony PlayStation 5</option>
+      </select>
+      <textarea id="reviewText" placeholder="Введите отзыв"></textarea>
+      <button id="addReviewBtn">Добавить отзыв</button>
+      
+  </div>
+    
+    <div id="viewReviewsPage">
+        <h2>Просмотр отзывов</h2>        
+        <ul id="productsList"></ul>
+          
+</body>
+</html>
